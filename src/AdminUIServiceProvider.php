@@ -27,7 +27,15 @@ class AdminUIServiceProvider extends ServiceProvider
             ], 'assets');
 
             $this->publishes([
+                __DIR__.'/../resources/lang' => resource_path('lang/vendor/brackets/admin-ui')
+            ], 'lang');
+
+            $this->publishes([
                 __DIR__.'/../install-stubs/resources/views' => resource_path('views')
+            ], 'views');
+
+            $this->publishes([
+                __DIR__.'/../resources/views' => resource_path('views/vendor/brackets/admin-ui')
             ], 'views');
 
             $this->publishes([

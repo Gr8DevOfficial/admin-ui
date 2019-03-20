@@ -8,9 +8,7 @@
 
     <div class="app-body">
 
-        @if(View::exists('admin.layout.sidebar'))
-            @include('admin.layout.sidebar')
-        @endif
+        @include('brackets/admin-ui::admin.layout.sidebar')
 
         <main class="main">
 

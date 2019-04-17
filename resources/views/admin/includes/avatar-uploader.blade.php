@@ -14,4 +14,5 @@
         @if(isset($media) && $media->count() > 0)
         :uploaded-images="{{ $media->toJson() }}"
         @endif
+        :timeout="300000"
 ></media-upload>
